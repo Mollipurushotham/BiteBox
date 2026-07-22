@@ -1,10 +1,26 @@
 header {
+  height: 6vh;
+  min-height: 30px;
+  padding: 5px;
+  background-color:black;
+  color: white;
+}
+img.h-100 {
+  height: 1.5em;
+}
+.flex {
+  display: flex;
+}
+header{
   padding: 5px;
   background-color: rgb(23, 201, 124);
-  color: white;
+  color: rgb(0, 0, 0);
 
 }
 .flex {
+  li{
+    display: flex;
+  }
   display: flex;
  
 }
@@ -18,4 +34,7 @@ li.no-decoration {
 .hover-yellow:hover {
    color: yellow;
 
+}
+list{
+  display: flex;
 }
