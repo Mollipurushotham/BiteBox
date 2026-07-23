@@ -38,3 +38,17 @@ li.no-decoration {
 list{
   display: flex;
 }
+.btn {
+  padding: 4px;
+  border-radius:5px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgb(186, 186, 186);
+}
+button.login {
+  background-color: rgb(201, 23, 23);
+  color: white;
+}
+.gap-basic {
+  gap: 5px;
+}
