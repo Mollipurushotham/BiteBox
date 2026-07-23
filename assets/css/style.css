@@ -1,54 +1,56 @@
-header {
-  height: 6vh;
-  min-height: 30px;
-  padding: 5px;
-  background-color:black;
-  color: white;
-}
-img.h-100 {
-  height: 1.5em;
-}
-.flex {
-  display: flex;
-}
 header{
-  padding: 5px;
-  background-color: rgb(23, 201, 124);
-  color: rgb(0, 0, 0);
+    padding:5px;
+    background-color:rgb(1, 19, 1);
+    color:white;
+}
+.flex{
+    display:flex;
+}
+.justify-content-between{
+    justify-content:space-between;
+}
+.align-items-center{
+    align-items:center;
+}
+a.no-decoration{
+    text-decoration: none;
 
 }
-.flex {
-  li{
-    display: flex;
-  }
-  display: flex;
- 
-}
-.justify-content-center {
-  justify-content: space-between;
+
+header>nav>ul{
+    font-size: 20px;
+    gap: 25px;
+    list-style:none;
 }
 
-li.no-decoration {
-  list-style: none;
+.hower-yellow:hover{
+    color:yellow
 }
-.hover-yellow:hover {
-   color: yellow;
+
+
+    /* display:flex;
+    justify-content:space between;
+    align-items:center;
+}
+header>nav>ul{
+    display:flex;
+    list-style:none;
+} */
+
+
+img.h-100{
+    height:2em;
+}
+.flex{
+    display:flex;
+}
+.btn{
+    padding:5px 10px;
+    overflow:hidden;
+    background-color:red;
+    color:black;
 
 }
 list{
-  display: flex;
-}
-.btn {
-  padding: 4px;
-  border-radius:5px;
-  overflow: hidden;
-  border: none;
-  box-shadow: 1px 1px 1px 1px rgb(186, 186, 186);
-}
-button.login {
-  background-color: rgb(201, 23, 23);
-  color: white;
-}
-.gap-basic {
-  gap: 5px;
+    gap: 20px;
 }
