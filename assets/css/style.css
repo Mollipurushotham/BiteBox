@@ -8,6 +8,9 @@ header {
     padding: 5px;
     z-index: 1000;
 }
+header > div > h1 {
+    font-size:small
+}
 
 main {
     padding: 35px 10px 25px 10px;
@@ -91,9 +94,13 @@ a.no-decoration {
 }
 
 a.login {
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: red;
     box-shadow: none;
+    
+}
+.red {
+    color: red;
 }
 
 
@@ -194,11 +201,69 @@ a.login {
 /* Auth */
 #auth-container {
     width: 30%;
+    max-width: 250px;
     min-height: 40vh;
     
     position: fixed;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    outline: 1px solid rgb(38, 205, 16);
 
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+input:focus {
+    outline: 1px rgb(38, 205, 16) solid;
+}
+form > div {
+    font-size: xx-small;
+}
+ input::placeholder{
+    font-size: xx-large; 
+}
+
+fieldset {
+    border:none;
+    flex-direction: column;
+    
+}
+.form-buttons > button {
+    font-size: large;
+    width: 100%;
+}
+.p-5 {
+    padding: 5px;
+}
+.p-10{
+    padding: 10px;
+}
+a.deals.hover{
+
+    color: var(--deal-link-color);
+}
+@keyframes colorshift {
+    0% {
+        color: var(--deal-link-color);
+    }
+    50% {
+        color: rgb(255, 0, 0);
+    }
+    75% {
+        color: rgb(0, 255, 0);
+    }
+    100% {
+        color: var(--deal-link-color);
+    }
+}
+a.deals {
+    animation: colorshift 2s infinite;
 }
